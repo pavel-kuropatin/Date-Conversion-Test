@@ -1,0 +1,4 @@
+# Set the default behavior, in case people don't set "git config --global core.autocrlf true".
+* text=auto
+*.java text eol=crlf
+*.properties text eol=crlf

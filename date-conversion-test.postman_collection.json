@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "c4005c20-1a86-4458-be26-55a7a2358ce2",
+		"name": "date-conversion-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15352082"
+	},
+	"item": [
+		{
+			"name": "get-date-model",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"javaDate\": \"2024-12-31T12:34:56.789+03:00\",\r\n  \"sqlDate\": \"2024-12-31+03:00\",\r\n  \"localDate\": \"2024-12-31+03:00\",\r\n  \"localDateTime\": \"2024-12-31T12:34:56.789+03:00\",\r\n  \"zonedDateTime\": \"2024-12-31T12:34:56.789+03:00\",\r\n  \"instant\": \"2024-12-31T12:34:56.789+03:00\",\r\n  \"xmlGregorianCalendar\": \"2024-12-31T12:34:56.789+03:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/date-conversion-test/get-date-model",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"date-conversion-test",
+						"get-date-model"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-dates",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/date-conversion-test/get-dates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"date-conversion-test",
+						"get-dates"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
